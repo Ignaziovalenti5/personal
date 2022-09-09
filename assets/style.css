@@ -1,22 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Titillium Web', sans-serif;
 }
-hr{
+
+hr {
     width: 300px;
-    margin-top: 50px;
+    margin: 50px 0;
 }
 
-body{
+body {
     width: calc(100% - 25px);
-    height: calc(100vh - 25px);
+    min-height: calc(100vh - 30px);
     margin: 15px;
 }
 
-.container{
-    background-color: #282828;
-    height: 100%;
+.container {
+    background: rgb(44, 59, 56);
+    background: linear-gradient(0deg, rgba(44, 59, 56, 1) 0%, rgba(32, 29, 41, 1) 100%);
+    height: calc(100vh - 30px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,21 +26,52 @@ body{
     box-shadow: 0 0 10px 1px #282828;
 }
 
-h1{
+h1 {
     font-size: 3.5em;
     font-weight: 700;
 }
 
-h3{
+h3 {
     font-size: 1.7em;
     margin-top: 50px;
 }
 
-p{
+h4 {
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.role {
     color: #a48535;
 }
 
-.text-container{
+.text-container {
     color: #fff;
     text-align: center;
+}
+
+.text-container h3 {
+    color: #ce5252;
+}
+
+#canvas-board {
+    background-color: #cccccc;
+    border: 5px solid #85888b;
+    box-shadow: 0 0 15px 5px #000;
+}
+
+#instruction {
+    font-size: 14px;
+    font-style: italic;
+    color: #ce5252;
+}
+
+.score-board {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.score-board h4 {
+    color: #fff;
 }
