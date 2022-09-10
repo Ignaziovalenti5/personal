@@ -14,6 +14,7 @@ body {
     /* background: #3077c2;
     background: linear-gradient(0deg, #2c363b 0%, #1d2229 100%); */
     background-image: url(./Hexagon.svg);
+    background-size: cover;
     height: calc(100vh - 30px);
     display: flex;
     flex-direction: column;
