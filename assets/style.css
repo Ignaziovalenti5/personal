@@ -11,8 +11,9 @@ body {
 }
 
 .header-container {
-    background: #3077c2;
-    background: linear-gradient(0deg, #2c363b 0%, #1d2229 100%);
+    /* background: #3077c2;
+    background: linear-gradient(0deg, #2c363b 0%, #1d2229 100%); */
+    background-image: url(./Hexagon.svg);
     height: calc(100vh - 30px);
     display: flex;
     flex-direction: column;
@@ -20,6 +21,24 @@ body {
     align-items: center;
     box-shadow: 0 0 10px 1px #282828;
     border-radius: 3px;
+    position: relative;
+    padding-top: 100px;
+}
+
+.header-container::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    opacity: .5;
+    
+}
+
+.info, #social{
+    z-index: 10;
 }
 
 h1 {
@@ -39,15 +58,27 @@ a:hover {
 
 
 #footer {
-    margin-top: -60px;
-    width: 75%;
+    margin-top: 100px;
+    width: 100%;
     padding-left: 50px;
+    z-index: 100;
+}
+
+#footer-snake {
+    margin-top: 50px;
+    width: 100%;
+    padding-left: 50px;
+    z-index: 100;
 }
 
 .return {
     position: absolute;
     top: 40px;
     left: 50px;
+}
+
+.cont{
+    z-index: 100;
 }
 
 #canvas-board {
@@ -82,10 +113,6 @@ a:hover {
     border-radius: 50px;
     box-shadow: 0 0 15px #000;
     margin-right: -15px;
-    /* animation-timing-function: infinite; */
 }
 
-    @keyframes load {
-        from {transition: -300px;}
-        to {transition: 0;}
-      }
+
