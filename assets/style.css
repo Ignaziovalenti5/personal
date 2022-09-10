@@ -75,3 +75,13 @@ h4 {
 .score-board h4 {
     color: #fff;
 }
+
+#snake h4{
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+   #snake{
+    display: none;
+   } 
+}
