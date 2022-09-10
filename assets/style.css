@@ -4,84 +4,69 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
-hr {
-    width: 300px;
-    margin: 50px 0;
-}
-
 body {
     width: calc(100% - 25px);
     min-height: calc(100vh - 30px);
     margin: 15px;
 }
 
-.container {
-    background: rgb(44, 59, 56);
-    background: linear-gradient(0deg, rgba(44, 59, 56, 1) 0%, rgba(32, 29, 41, 1) 100%);
+.header-container {
+    background: #3077c2;
+    background: linear-gradient(0deg, #2c363b 0%, #1d2229 100%);
     height: calc(100vh - 30px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 10px 1px #282828;
+    border-radius: 3px;
 }
 
-h1 {
-    font-size: 3.5em;
-    font-weight: 700;
+h1{
+    font-size: 6rem;
+    line-height: 5rem;
 }
 
-h3 {
-    font-size: 1.7em;
-    margin-top: 50px;
+a{
+    color:#fff ;
+    text-decoration: none;
 }
 
-h4 {
-    color: #fff;
-    padding-bottom: 10px;
+a:hover{
+    text-decoration: red;
+    color: lightgray;
 }
 
-.role {
-    color: #a48535;
+
+#footer{
+    margin-top: -60px;
+    width: 75%;
+    padding-left: 50px;
 }
 
-.text-container {
-    color: #fff;
-    text-align: center;
+.return{
+    position: absolute;
+    top: 40px;
+    left: 50px;
 }
 
-.text-container h3 {
-    color: #ce5252;
-}
-
-#canvas-board {
+#canvas-board{
     background-color: #cccccc;
-    border: 5px solid #85888b;
-    box-shadow: 0 0 15px 5px #000;
+    border: 5px solid #0091ff;
+    box-shadow: 0 0 15px #000;
 }
 
-#instruction {
+#instruction{
     font-size: 14px;
     font-style: italic;
     color: #ce5252;
 }
 
-.score-board {
+.score-board{
     display: flex;
-    width: 500px;
+    align-items: center;
     justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.score-board h4 {
-    color: #fff;
-}
-
-#snake h4{
-    text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-   #snake{
-    display: none;
-   } 
-}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignazio Valenti - Snake Game</title>
+    <link rel="stylesheet" href="./bootstrap-5.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow&family=Titillium+Web:wght@200;400;700&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <a class="return" href="./index.html">Torna alla home</a>
+    <div class="header-container text-white">
+        <div>
+            <h2 class="text-center fs-1">Snake Game</h2>
+
+            <div>
+                <canvas width="500px" height="400px" id="canvas-board"></canvas>
+            </div>
+        
+            <div class="score-board">
+                <h5>Score: <span id="score">0</span></h5>
+                <div id="instruction">
+                    <p>Press <b>"ArrowRight"</b> on keyboard to play!</p>
+                </div>
+                <h5>Best Score: <span id="best-score">0</span></h5>
+            </div>
+            
+        </div>
+
+    </div>
+    <div id="footer" class="text-white">
+        <p>&copy; 2022, Ignazio Valenti.</p>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
