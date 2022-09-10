@@ -54,10 +54,12 @@ a:hover{
     background-color: #cccccc;
     border: 5px solid #0091ff;
     box-shadow: 0 0 15px #000;
+    margin-bottom: 10px;
 }
 
 #instruction{
     font-size: 14px;
+    padding-top: 10px;
     font-style: italic;
     color: #ce5252;
 }
@@ -70,3 +72,10 @@ a:hover{
     margin: 0 auto;
 }
 
+.coffee:hover{
+    background: #000;
+    padding: 8px 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000;
+    margin-right: -15px;
+}
