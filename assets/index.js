@@ -7,3 +7,5 @@ let social = document.querySelector('#social')
 // for(let c of main.childNodes) {
 //   console.log(c);
 // }
+
+// console.log(main);
