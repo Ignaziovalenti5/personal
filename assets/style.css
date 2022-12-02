@@ -5,17 +5,14 @@
 }
 
 body {
-    width: calc(100% - 25px);
-    min-height: calc(100vh - 30px);
-    margin: 15px;
+    width: 100%;
+    height: 100%;
 }
 
 .header-container {
-    /* background: #3077c2;
-    background: linear-gradient(0deg, #2c363b 0%, #1d2229 100%); */
-    background-image: url(./Hexagon.svg);
+    background-image: url(../img/Hexagon.svg);
     background-size: cover;
-    height: calc(100vh - 30px);
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,6 +33,19 @@ body {
     background-color: rgb(0, 0, 0);
     opacity: .5;
     
+}
+
+.presentation{
+    max-width: 900px;
+    display: flex;
+
+}
+
+.presentation img{
+    width: 130px;
+    height: 100%;
+    border-radius: 100%;
+    margin-right: 30px;
 }
 
 .info, #social{
@@ -59,14 +69,12 @@ a:hover {
 
 
 #footer {
-    margin-top: 10vh;
     width: 100%;
     padding-left: 50px;
     z-index: 100;
 }
 
-#footer-snake {
-    margin-top: 5vh;
+#footer-projects {
     width: 100%;
     padding-left: 50px;
     z-index: 100;
@@ -76,32 +84,6 @@ a:hover {
     position: absolute;
     top: 40px;
     left: 50px;
-}
-
-.cont{
-    z-index: 100;
-}
-
-#canvas-board {
-    background-color: #cccccc;
-    border: 5px solid #0091ff;
-    box-shadow: 0 0 15px #000;
-    margin-bottom: 10px;
-}
-
-#instruction {
-    font-size: 14px;
-    padding-top: 10px;
-    font-style: italic;
-    color: #ce5252;
-}
-
-.score-board {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 500px;
-    margin: 0 auto;
 }
 
 .coffee {
@@ -120,6 +102,42 @@ a:hover {
     .info a{
         display: none;
     }
+}
+
+.cont{
+    z-index: 100;
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .presentation{
+        flex-direction: column;
+    }
+    .cont{
+        flex-direction: column;
+    }
+
+    .card{
+        transform: scale(0.7);
+    }
+}
+
+.card{
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.tas-img{
+    width: 100%;
+    height: auto;
+}
+
+.card-text{
+    height: 100px;
+    overflow-y: scroll;
 }
 
 
